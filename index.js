@@ -9,7 +9,7 @@ var now = (
   (function(){ return this }()).performance &&
   'function' === typeof performance.now
 ) ? function() { return performance.now() }
-  : function() { return +new Date }
+  : Date.now || function() { return +new Date }
 
 function fps(opts) {
   if (!(this instanceof fps)) return new fps(opts)
