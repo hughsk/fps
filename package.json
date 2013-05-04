@@ -1,7 +1,7 @@
 {
   "name": "fps",
   "version": "0.0.1",
-  "description": "ERROR: No README.md file found!",
+  "description": "Tiny module for measuring FPS",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
