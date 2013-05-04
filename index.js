@@ -4,7 +4,7 @@ var EventEmitter = require('events').EventEmitter
 module.exports = fps
 
 // Try use performance.now(), otherwise try
-// require('microtime') or +new Date.
+// +new Date.
 var now = (
   (function(){ return this }()).performance &&
   'function' === typeof performance.now
