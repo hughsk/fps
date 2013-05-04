@@ -18,6 +18,7 @@ function fps(opts) {
   opts = opts || {}
   this.last = now()
   this.rate = 0
+  this.time = 0
   this.decay = opts.decay || 1
   this.every = opts.every || 1
   this.ticks = 0
@@ -27,11 +28,12 @@ inherits(fps, EventEmitter)
 fps.prototype.tick = function() {
   var time = now()
     , diff = time - this.last
-    , fps = 1000 / diff
+    , fps = diff
 
   this.ticks += 1
   this.last = time
-  this.rate = this.rate + (fps - this.rate) * this.decay
+  this.time += (fps - this.time) * this.decay
+  this.rate = 1000 / this.time
   if (!(this.ticks % this.every)) this.emit('data', this.rate)
 }
 
