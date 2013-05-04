@@ -1,0 +1,29 @@
+{
+  "name": "fps",
+  "version": "0.0.1",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/fps.git"
+  },
+  "keywords": [
+    "fps",
+    "frames",
+    "per",
+    "second",
+    "tick",
+    "measure"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "inherits": "~1.0.0"
+  },
+  "devDependencies": {
+    "tape": "~0.3.3"
+  }
+}
