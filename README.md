@@ -26,7 +26,7 @@ setInterval(function() {
 
 var element = document.getElementById('fps')
 ticker.on('data', function(framerate) {
-  fps.innerHTML = String(framerate)
+  element.innerHTML = String(framerate)
 })
 ```
 
